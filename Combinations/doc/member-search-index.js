@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"org.howard.edu.lsp.assignment2.test","c":"CombinationDriver","l":"CombinationDriver()","u":"%3Cinit%3E()"},{"p":"org.howard.edu.lsp.assignment2.test","c":"CombinationDriver","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
