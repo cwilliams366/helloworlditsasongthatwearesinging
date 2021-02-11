@@ -2,12 +2,12 @@
  * Date: 2/3/2021
  * 
  */
-package org.howard.edu.lsp.assignment2.combination;
+  package org.howard.edu.lsp.assignment2.combination;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+  import java.util.ArrayList;
+  import java.util.Arrays;
 
-public class Combination {
+  public class Combination {
 	private int numArr[], targetNum;
 	
 	//Class Variable to hold all possible 2^n Subsets for the given sum from the given array
@@ -26,9 +26,9 @@ public class Combination {
 	
   /**Method calculates and distributes all possible subsets of the target sum
    * based on the given array. Takes no arguments. 
- * 
- */
-public void combinationSumCalculation() {
+   * 
+   */
+    public void combinationSumCalculation() {
 	  
 	  //Holds the Indices of the 2^n possible combination subsets
 	  ArrayList<ArrayList<Integer>> subsetIndices = new ArrayList<>();
@@ -65,6 +65,7 @@ public void combinationSumCalculation() {
 		  //Add all the sets' respective indices
 		  subsetIndices.add(tempSubsetIndexHolder);
 	  }
+	  
 	 
 	  //Finally, display the subsets and their respective indices 
 	  for(int x = 0; x < listOfSubsets.size();x++) {  
@@ -80,4 +81,21 @@ public void combinationSumCalculation() {
 	 }
 	     System.out.println();
   } 
+
+  /*Displays contents of the original array
+   * */
+   public void displayArray() {
+	//Display array
+	  System.out.print("Input: [");
+	  for(int i = 0; i < numArr.length;i++) {
+		  System.out.print(numArr[i]);
+		  if(i == numArr.length-1) {
+			  System.out.println("]");
+			  break;
+		  }
+		  System.out.print(",");
+	  }
+	  
+	  System.out.println("Target Sum: "+targetNum);
+   }
 }
